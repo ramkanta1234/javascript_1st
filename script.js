@@ -33,3 +33,23 @@ function factorial(n){
 let result = factorial(-5);
 console.log(result);
 
+
+
+/*Problem3 - Array Filtering:
+Write a JavaScript function that takes an array of numbers and a number as input. 
+The function should return a new array containing only the numbers from the original array 
+that are greater than the given number.*/
+
+function arryFilter(arr,num){
+  const result1 = [];
+  for(let i=1;i<=arr.length;i++){
+    if(arr[i]>num){
+      result1.push(arr[i]);
+    }
+  }
+  return result1;
+}
+const arr=[1,5,10,3,8];
+const num=5;
+let result1=arryFilter(arr,num);
+console.log(result1);
