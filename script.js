@@ -53,3 +53,35 @@ const arr=[1,5,10,3,8];
 const num=5;
 let result1=arryFilter(arr,num);
 console.log(result1);
+
+
+
+
+//calculator on console
+function calculator(num1,num2,operator){  //create calculator() function with three arguments 
+  let result;
+  switch(operator){
+      case '+':
+          result = num1+num2;
+          break;
+      case '-':
+          result= num1-num2;
+          break;
+      case '*':
+          result = num1*num2;
+          break;
+      case '%':
+          result = num1%num2;
+          break;
+      case '/':
+          if(num2===0){
+              return "Error , can't divisible by 0"
+          }
+          result= num1/num2;
+          break;
+      default:
+          return "Error , Invalid operator "
+  }
+  return `${num1} ${operator} ${num2} = ${result}`;
+
+}
